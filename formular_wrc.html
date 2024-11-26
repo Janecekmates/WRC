@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <title>Formulář - WRC</title>
+    <style>
+
+
+
+        body {
+            background:#333 url('../projekt_pva/img/fabiawrc2.jpg') no-repeat center center/cover;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .container {
+            border: 5px black solid;
+            background-color: gray;
+            color: black;
+            max-width: 600px;
+            margin: 100px auto;
+            padding: 10px;
+            border-radius: 30px;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        }
+
+        .block{
+            margin: 20px 20px 25px;
+            border: 1px red dotted;
+            padding: 10px ;
+            background-color: lightgray;
+            padding: 10px 10px 15px ;
+        }
+
+        .block .item{
+            margin-bottom: 5px 0;
+        }
+        
+        .w-100{
+            width: 100%;
+        }
+
+        .m-t-1{
+            margin-top: 10px;
+        }
+
+        .p-1{
+            padding: 10px;
+        }
+
+        .p-2{
+            padding: 20px;
+        }
+        #navbar {
+    background-color: lightgray;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+}
+
+#navbar ul {
+    display: flex;
+    list-style: none;
+}
+#navbar .logo {
+    margin: 0 12px;
+    font-size: larger;
+    font-weight: bold;
+}
+
+
+#navbar ul li a {
+    text-decoration: none;
+    margin: 0 4px;
+    padding:  12px;
+    text-decoration: none;
+    border-radius: 5px;
+    text-transform: capitalize;
+    color: black;
+}
+#navbar ul li a:hover {
+    background-color: #514942;
+    color:white;
+}
+
+
+
+
+    </style>
+</head>
+<nav id="navbar">
+    <div class="logo"><i class="fa-solid fa-car">&nbsp</i>WRC/Rally</div>
+    <ul>
+        <li><a href="index.html"><i class="fa-solid fa-left-long">&nbsp</i>zpátky na úvodní stranu</a></li>
+    </ul>
+</nav>
+<body>
+    <div class="container"> <h1>WRC formulář</h1>
+        <form>
+            <div class="block">
+                <div><label for="fname">Oblíbený jezdec (jméno):</label></div>
+                <div class="item"><input class="p-1" type="text" id="fname" name="fname"></div>
+                
+            </div>
+             
+            
+                <div class="block">
+                    <div>
+                        <div><label for="fname">Oblíbený Auto:</label></div>
+                        <input type="checkbox" id="game" name="game" value="Puma"></div>
+                      <div><label for="game"> Ford Puma</label></div>
+                      <div><input type="checkbox" id="game" name="game" value="Yaris"></div>
+                      <div><label for="vehicle2"> Toyota Yaris</label></div>
+                      <div><input type="checkbox" id="game" name="game" value="i20"></div>
+                      <div><label for="vehicle3"> Hyundai i20</label></div>
+                </div>
+                      
+                <div class="block">
+                          <div><input type="radio" id="html" name="fav_language" value="HTML"></div>
+                          <div><label for="html">asfalt</label></div>
+                          <div><input type="radio" id="css" name="fav_language" value="CSS"></div>
+                          <div><label for="css">šotolina</label></div>
+                          <div><input type="radio" id="javascript" name="fav_language" value="JavaScript"></div>
+                          <div><label for="javascript">sníh</label></div>
+                      </div>
+                      
+                                    
+                                    
+                  
+              
+              
+                  <div>
+                      </div>
+                      <div><input type="submit" value="Odeslat"></div>
+                              </form>
+                          </div>
+                  </div>
+              
+          
+</body>
+</html>
