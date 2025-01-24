@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../src5"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "20240906pva"
+	}
+}

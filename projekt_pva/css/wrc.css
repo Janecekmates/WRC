@@ -1,0 +1,201 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.l-heading {
+    font-size: 4rem;
+    margin-bottom: 0.75rem;
+    line-height: 1.1;
+}
+.lead {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+}
+
+.btn {
+    display: inline-block;
+    color: lightgray;
+    background-color: #5A524A;
+    padding: 0.5rem 2rem;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+
+.btn:hover {
+    background: #514942;
+}
+
+#navbar {
+    background-color: #B4A494;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+}
+
+#navbar ul {
+    display: flex;
+    list-style: none;
+}
+#navbar .logo {
+    margin: 0 12px;
+    font-size: larger;
+    font-weight: bold;
+}
+
+
+#navbar ul li a {
+    text-decoration: none;
+    margin: 0 4px;
+    padding:  12px;
+    text-decoration: none;
+    border-radius: 5px;
+    text-transform: capitalize;
+    color: black;
+}
+#navbar ul li a:hover {
+    background-color: #514942;
+    color:white;
+}
+#showcase {
+    background: #333 url('./img/ogier.jpg') no-repeat center center/cover;
+    height: 100vh;
+    color: white;
+
+}
+
+#showcase .showcase-content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 0 2rem;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.m-heading {
+    font-size: 2rem;
+    margin-bottom: 0.75rem;
+    background-color: #555;
+    color: white;
+}
+
+h2 {
+    margin: 3rem;
+    padding: 3rem;
+}
+#naucitese .items {
+    display: flex;
+    padding: 1rem;
+    justify-content: space-around;
+    background-color: #555;
+    
+}
+
+
+#naucitese .item {
+    position: relative;
+    text-align: center;
+    padding:2rem;
+    width: 200px;
+    top: 0;
+   background-color: #555;
+   color: white; 
+}
+
+
+
+
+#nastroje .items {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+}
+
+#nastroje .item {
+    position: relative;
+    background-color: #555; 
+    padding: 0.3rem;
+    margin-bottom: 2rem;
+    
+    
+}
+
+
+
+
+#nastroje .item:hover .overlay {
+    width: 100%;
+}
+
+
+#nastroje .image {
+    width: 400px;
+}
+
+#nastroje .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--primary-color);
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s ease;
+    
+}
+
+#nastroje .text {
+    white-space: nowrap;
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.text-center {
+    text-align: center;
+}
+h2 {
+    margin: 3rem;
+    padding: 3rem;
+}
+.bg-dark {
+    background-color: #555;
+    color: white;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+}
+

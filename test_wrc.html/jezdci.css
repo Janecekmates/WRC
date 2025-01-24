@@ -1,0 +1,106 @@
+/* Resetování základního stylu pro lepší vzhled */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 20px;
+    width: 100%;
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+/* Sekce jezdců */
+.drivers {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    width: 80%;
+    max-width: 1200px;
+    margin-top: 40px;
+}
+
+/* Styl pro každého jezdce */
+.driver {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 20px;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.driver img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.driver:hover img {
+    transform: scale(1.1);
+}
+
+.driver h2 {
+    font-size: 1.5em;
+    margin-top: 15px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.driver p {
+    font-size: 1.1em;
+    color: #666;
+    transition: opacity 0.3s ease;
+}
+
+/* Animace pro jezdce při posouvání stránky (scroll) */
+.driver.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.driver:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    margin-top: 30px;
+    font-size: 0.9em;
+    color: #777;
+}
+
+/* Animace pro textové efekty při hover */
+.driver:hover h2 {
+    transform: translateY(-10px);
+    opacity: 1;
+}
+
+.driver:hover p {
+    opacity: 1;
+}
